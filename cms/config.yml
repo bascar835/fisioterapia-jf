@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: TU-USUARIO/fisioterapia-jf
+  repo: bascar835/fisioterapia-jf
   branch: main 
   auth_type: implicit
 
