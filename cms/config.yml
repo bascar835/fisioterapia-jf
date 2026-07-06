@@ -1,0 +1,194 @@
+backend:
+  name: github
+  repo: TU-USUARIO/fisioterapia-jf
+  branch: main 
+  auth_type: implicit
+
+
+publish_mode: simple
+
+media_folder: "assets/img/uploads"
+public_folder: "assets/img/uploads"
+
+collections:
+  - name: "home"
+    label: "Página principal"
+    files:
+      - name: "home"
+        label: "Sección principal (Hero)"
+        file: "content/home.json"
+        format: json
+        fields:
+          - name: hero_media
+            label: "Foto o vídeo principal"
+            widget: object
+            hint: "Esto es lo que se muestra arriba del todo, en la portada de la web."
+            fields:
+              - name: type
+                label: "Tipo de contenido"
+                widget: select
+                default: image
+                options:
+                  - { label: "Foto", value: "image" }
+                  - { label: "Vídeo subido (mp4)", value: "video" }
+                  - { label: "Reel / enlace externo (Instagram, TikTok, YouTube Shorts)", value: "embed" }
+              - name: image
+                label: "Foto"
+                widget: image
+                required: false
+                hint: "Rellena solo si el tipo es 'Foto'."
+              - name: video
+                label: "Archivo de vídeo"
+                widget: file
+                required: false
+                hint: "Rellena solo si el tipo es 'Vídeo subido'. Sube un .mp4 ligero."
+              - name: embed_url
+                label: "Enlace del reel o vídeo"
+                widget: string
+                required: false
+                hint: "Rellena solo si el tipo es 'Reel / enlace externo'. Pega la URL completa (Instagram, TikTok o YouTube)."
+              - name: caption
+                label: "Pie de foto/vídeo"
+                widget: string
+                required: false
+
+  - name: "posts"
+    label: "Blog · Artículos"
+    files:
+      - name: "posts"
+        label: "Lista de artículos"
+        file: "content/posts.json"
+        format: json
+        fields:
+          - name: posts
+            label: "Artículos"
+            widget: list
+            summary: "{{title}} — {{date}}"
+            fields:
+              - { name: slug, label: "Slug (URL, sin espacios)", widget: string }
+              - { name: title, label: "Título", widget: string }
+              - { name: date, label: "Fecha", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { name: author, label: "Autor", widget: string, default: "Fisioterapia y Osteopatía JF" }
+              - name: category
+                label: "Categoría"
+                widget: select
+                options: ["Fisioterapia", "Osteopatía", "Prevención", "Bienestar"]
+              - name: image
+                label: "Imagen (miniatura y vista previa para compartir)"
+                widget: image
+                hint: "Se usa en la tarjeta del blog y como vista previa al compartir el enlace (WhatsApp, redes). Es obligatoria aunque abajo pongas un vídeo."
+              - name: featured_media
+                label: "Vídeo o reel de cabecera (opcional)"
+                widget: object
+                required: false
+                hint: "Si lo rellenas, esto es lo que se ve grande arriba del artículo, en vez de la imagen. Si lo dejas vacío, se usa la imagen de arriba."
+                fields:
+                  - name: type
+                    label: "Tipo de contenido"
+                    widget: select
+                    default: image
+                    options:
+                      - { label: "Usar la imagen de arriba", value: "image" }
+                      - { label: "Vídeo subido (mp4)", value: "video" }
+                      - { label: "Reel / enlace externo (Instagram, TikTok, YouTube Shorts)", value: "embed" }
+                  - name: video
+                    label: "Archivo de vídeo"
+                    widget: file
+                    required: false
+                    hint: "Rellena solo si el tipo es 'Vídeo subido'. Sube un .mp4 ligero."
+                  - name: embed_url
+                    label: "Enlace del reel o vídeo"
+                    widget: string
+                    required: false
+                    hint: "Rellena solo si el tipo es 'Reel / enlace externo'. Pega la URL completa (Instagram, TikTok o YouTube)."
+              - { name: excerpt, label: "Extracto (resumen corto)", widget: text }
+              - name: content
+                label: "Secciones del artículo"
+                widget: list
+                required: false
+                hint: "Opcional. Puedes dejarlo vacío si el artículo es solo el vídeo/imagen de arriba y el extracto."
+                summary: "{{heading}}"
+                fields:
+                  - { name: heading, label: "Subtítulo de la sección", widget: string }
+                  - name: paragraphs
+                    label: "Párrafos"
+                    widget: list
+                    required: false
+                    hint: "Opcional. Puedes dejarlo vacío si esta sección es solo una foto o un vídeo."
+                    field: { name: paragraph, label: "Párrafo", widget: text }
+                  - name: media
+                    label: "Fotos, vídeos o reels de esta sección"
+                    label_singular: "Elemento multimedia"
+                    hint: "Opcional. Añade una foto suelta, un vídeo subido o pega el enlace de un reel de Instagram/TikTok/YouTube Shorts."
+                    widget: list
+                    required: false
+                    summary: "{{fields.type}}"
+                    fields:
+                      - name: type
+                        label: "Tipo de contenido"
+                        widget: select
+                        default: image
+                        options:
+                          - { label: "Foto", value: "image" }
+                          - { label: "Vídeo subido (mp4)", value: "video" }
+                          - { label: "Reel / enlace externo (Instagram, TikTok, YouTube Shorts)", value: "embed" }
+                      - name: image
+                        label: "Foto"
+                        widget: image
+                        required: false
+                        hint: "Rellena solo si el tipo es 'Foto'."
+                      - name: video
+                        label: "Archivo de vídeo"
+                        widget: file
+                        required: false
+                        hint: "Rellena solo si el tipo es 'Vídeo subido'. Sube un .mp4 ligero."
+                      - name: embed_url
+                        label: "Enlace del reel o vídeo"
+                        widget: string
+                        required: false
+                        hint: "Rellena solo si el tipo es 'Reel / enlace externo'. Pega la URL completa (Instagram, TikTok o YouTube)."
+                      - name: caption
+                        label: "Pie de foto/vídeo"
+                        widget: string
+                        required: false
+
+  - name: "services"
+    label: "Servicios"
+    files:
+      - name: "services"
+        label: "Servicios de la clínica"
+        file: "content/services.json"
+        format: json
+        fields:
+          - name: categories
+            label: "Categorías (Fisioterapia, Osteopatía, Otros servicios...)"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { name: title, label: "Nombre de la categoría", widget: string }
+              - name: items
+                label: "Servicios de esta categoría"
+                widget: list
+                summary: "{{title}} — {{price}}"
+                fields:
+                  - { name: title, label: "Nombre del servicio", widget: string }
+                  - { name: image, label: "Imagen", widget: image }
+                  - { name: alt, label: "Texto alternativo de la imagen", widget: string }
+                  - { name: description, label: "Descripción", widget: text, required: false }
+                  - { name: price, label: "Precio (ej. 35 €). Déjalo vacío si no tiene precio fijo", widget: string, required: false }
+
+  - name: "gallery"
+    label: "Galería"
+    files:
+      - name: "gallery"
+        label: "Imágenes de la galería"
+        file: "content/gallery.json"
+        format: json
+        fields:
+          - name: images
+            label: "Imágenes"
+            widget: list
+            summary: "{{alt}}"
+            fields:
+              - { name: src, label: "Imagen", widget: image }
+              - { name: alt, label: "Texto alternativo", widget: string } 

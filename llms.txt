@@ -1,0 +1,37 @@
+# Fisioterapia y Osteopatía JF
+
+Sitio web estático de una clínica de fisioterapia y osteopatía en Benidorm, España.
+
+## Propósito
+
+Ofrecer información clara sobre los servicios, el equipo, el horario, el blog de salud y bienestar, y los datos de contacto de la clínica.
+
+## Páginas principales
+
+- `index.html`: presentación de la clínica, servicios destacados, galería, opiniones, horario, contacto y últimos artículos.
+- `blog.html`: listado de artículos con buscador, categorías y paginación preparada.
+- `post.html`: vista de artículo individual con contenido largo, compartir y relacionados.
+- `404.html`: página de error alineada con la identidad visual.
+
+## Contenido destacado
+
+- Servicios de fisioterapia, osteopatía, readaptación funcional y deportiva.
+- Blog original sobre fisioterapia, osteopatía, prevención de lesiones y bienestar.
+- Identidad visual clínica, tranquila y responsive para GitHub Pages.
+
+## Datos del negocio
+
+- Nombre: Fisioterapia y Osteopatía JF
+- Profesional: Jorge Flores Cabanillas, fisioterapeuta colegiado (Col. 4625) y osteópata
+- Ubicación: Benidorm, Alicante, España
+- Teléfono: +34 608 50 59 83
+- Email: info@fisioterapiajf.es
+- Dirección: C. de las Escuelas, nº3, 03501 Benidorm, Alicante
+
+## Reglas técnicas
+
+- Solo HTML5, CSS3 y JavaScript ES6.
+- Sin backend.
+- Sin frameworks.
+- Compatible con GitHub Pages.
+- Accesible por teclado y con estructura semántica.

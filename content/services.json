@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "title": "Fisioterapia",
+      "items": [
+        {
+          "title": "Primera visita y valoración",
+          "image": "assets/img/consultorio.jpg",
+          "alt": "Sala de valoración de fisioterapia",
+          "description": "Valoración completa del dolor o la lesión y diseño de un plan de tratamiento personalizado.",
+          "price": ""
+        },
+        {
+          "title": "Fisioterapia de mantenimiento",
+          "image": "assets/img/consultorio.jpg",
+          "alt": "Sesión de fisioterapia de mantenimiento",
+          "description": "Sesiones de seguimiento para tratar molestias puntuales, sobrecargas musculares o dolor recurrente.",
+          "price": ""
+        },
+        {
+          "title": "Readaptación funcional y deportiva",
+          "image": "assets/img/consultorio.jpg",
+          "alt": "Readaptación funcional y deportiva",
+          "description": "Ejercicio terapéutico progresivo para volver a tu actividad diaria o deportiva tras una lesión.",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "title": "Osteopatía",
+      "items": [
+        {
+          "title": "Sesión de osteopatía",
+          "image": "assets/img/consultorio.jpg",
+          "alt": "Sesión de osteopatía",
+          "description": "Técnicas manuales osteopáticas para tratar el origen del dolor y mejorar la movilidad general.",
+          "price": ""
+        },
+        {
+          "title": "Osteopatía estructural",
+          "image": "assets/img/consultorio.jpg",
+          "alt": "Osteopatía estructural",
+          "description": "Trabajo sobre articulaciones y tejidos para restablecer el equilibrio del cuerpo.",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "title": "Otros servicios",
+      "items": [
+        {
+          "title": "Punción seca",
+          "image": "assets/img/consultorio.jpg",
+          "alt": "Punción seca en fisioterapia",
+          "description": "Tratamiento de puntos gatillo miofasciales para aliviar tensión y dolor muscular.",
+          "price": ""
+        },
+        {
+          "title": "Vendaje neuromuscular",
+          "image": "assets/img/consultorio.jpg",
+          "alt": "Vendaje neuromuscular",
+          "description": "Vendaje funcional de apoyo tras el tratamiento, para prolongar su efecto en el día a día.",
+          "price": ""
+        }
+      ]
+    }
+  ]
+}

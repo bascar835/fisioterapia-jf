@@ -1,0 +1,8 @@
+{
+  "images": [
+    { "src": "assets/img/consultorio.jpg", "alt": "Sala de tratamiento de Fisioterapia y Osteopatía JF" },
+    { "src": "assets/img/local1.jpg", "alt": "Fachada de la clínica Fisioterapia y Osteopatía JF de noche" },
+    { "src": "assets/img/local2.jpg", "alt": "Entrada de la clínica Fisioterapia y Osteopatía JF en Benidorm" },
+    { "src": "assets/img/local3.jpg", "alt": "Puerta de acceso a la clínica Fisioterapia y Osteopatía JF" }
+  ]
+}

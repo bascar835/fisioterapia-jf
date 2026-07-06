@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "slug": "dolor-de-espalda-cuando-acudir-al-fisioterapeuta",
+      "title": "Dolor de espalda: cuándo acudir al fisioterapeuta",
+      "date": "2026-07-01",
+      "author": "Fisioterapia y Osteopatía JF",
+      "category": "Fisioterapia",
+      "image": "assets/img/consultorio.jpg",
+      "featured_media": { "type": "image", "video": "", "embed_url": "" },
+      "excerpt": "El dolor de espalda es uno de los motivos de consulta más frecuentes. Te contamos qué señales indican que ha llegado el momento de pedir cita.",
+      "content": [
+        {
+          "heading": "No todo dolor de espalda es igual",
+          "paragraphs": [
+            "Un dolor leve tras un mal gesto puede mejorar solo en pocos días. Pero cuando el dolor se repite, dura más de una semana o limita tu actividad diaria, conviene que un fisioterapeuta lo valore.",
+            "En la primera visita hacemos una valoración completa: cómo empezó el dolor, qué lo mejora o lo empeora, y cómo se mueve tu columna, para entender la causa y no solo tratar el síntoma."
+          ],
+          "media": []
+        },
+        {
+          "heading": "Señales de alarma que no debes ignorar",
+          "paragraphs": [
+            "Pide cita cuanto antes si el dolor va acompañado de hormigueo o pérdida de fuerza en las piernas, si aparece de noche sin motivo aparente o si no mejora tras varios días de reposo relativo.",
+            "En la mayoría de los casos, un tratamiento de fisioterapia combinado con ejercicio específico consigue reducir el dolor y evitar que se repita."
+          ],
+          "media": []
+        }
+      ]
+    },
+    {
+      "slug": "que-es-la-osteopatia-y-como-puede-ayudarte",
+      "title": "Qué es la osteopatía y cómo puede ayudarte",
+      "date": "2026-06-20",
+      "author": "Fisioterapia y Osteopatía JF",
+      "category": "Osteopatía",
+      "image": "assets/img/consultorio.jpg",
+      "featured_media": { "type": "image", "video": "", "embed_url": "" },
+      "excerpt": "La osteopatía trabaja con técnicas manuales para mejorar la movilidad y aliviar el dolor. Te explicamos en qué consiste una sesión.",
+      "content": [
+        {
+          "heading": "Un enfoque manual y global",
+          "paragraphs": [
+            "La osteopatía parte de la idea de que el cuerpo funciona como un conjunto: una tensión en una zona puede afectar a otra que, en apariencia, no tiene relación con tu dolor.",
+            "Por eso, además de tratar la zona dolorosa, se valoran otras estructuras que puedan estar influyendo, como la movilidad de la espalda, la cadera o el diafragma."
+          ],
+          "media": []
+        },
+        {
+          "heading": "Para qué suele usarse",
+          "paragraphs": [
+            "Es habitual recurrir a la osteopatía ante contracturas persistentes, dolores de cabeza tensionales, molestias digestivas leves relacionadas con tensión muscular, o simplemente para mejorar la movilidad general del cuerpo.",
+            "Cada sesión se adapta a la persona: no existe un protocolo único, sino un tratamiento pensado según lo que encontremos en la valoración."
+          ],
+          "media": []
+        }
+      ]
+    },
+    {
+      "slug": "5-habitos-para-cuidar-tu-espalda-en-el-dia-a-dia",
+      "title": "5 hábitos para cuidar tu espalda en el día a día",
+      "date": "2026-06-05",
+      "author": "Fisioterapia y Osteopatía JF",
+      "category": "Bienestar",
+      "image": "assets/img/consultorio.jpg",
+      "featured_media": { "type": "image", "video": "", "embed_url": "" },
+      "excerpt": "Pequeños cambios en tu rutina pueden marcar una gran diferencia en cómo se siente tu espalda. Aquí tienes cinco hábitos sencillos de aplicar.",
+      "content": [
+        {
+          "heading": "Cuida tu postura sin obsesionarte",
+          "paragraphs": [
+            "No existe una única postura perfecta, pero sí ayuda cambiar de posición con frecuencia si pasas muchas horas sentado y evitar mantener la misma postura durante demasiado tiempo.",
+            "Levantarte cada hora, aunque sea un par de minutos, ayuda a tu espalda mucho más que buscar la postura ideal."
+          ],
+          "media": []
+        },
+        {
+          "heading": "Mueve el cuerpo cada día",
+          "paragraphs": [
+            "Caminar, estirar o hacer ejercicio suave de forma regular mantiene la musculatura activa y reduce el riesgo de sobrecargas.",
+            "Si tienes dudas sobre qué ejercicios son adecuados para tu caso, podemos ayudarte a diseñar una rutina sencilla adaptada a ti en tu próxima cita."
+          ],
+          "media": []
+        }
+      ]
+    }
+  ]
+}
