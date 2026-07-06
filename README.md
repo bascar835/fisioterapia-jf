@@ -33,4 +33,4 @@ No hace falta ejecutarlo a mano ni antes ni después de publicar: el despliegue 
 ## Datos a revisar antes de publicar
 
 - **Email de contacto**: se ha usado `info@fisioterapiajf.es` como marcador de posición. Cámbialo por un email real en `index.html`, `blog.html`, `post.html` y `content/home.json` si tienes uno.
-- **Precios de servicios**: en `content/services.json` los precios se han dejado en blanco a propósito; añádelos desde el panel `/cms/` cuando quieras mostrarlos.
+- **Precios de servicios**: en `content/services.json` los precios se han dejado en blanco a propósito; añádelos desde el panel `/cms/` cuando quieras mostrarlos. 
